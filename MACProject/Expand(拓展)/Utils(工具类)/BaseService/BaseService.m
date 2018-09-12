@@ -75,6 +75,8 @@ typedef void(^ServerBlock)(id result, NSInteger errorCode, NSString *message);
     }];
     
 }
+
+
 +(void)POSTWithCache:(NSString *)URLString parameters:(id)parameters  completionBlock:(ResultBlock)requestBlock
 {
     NSString *urlStr =[URLString stringByAppendingString: [parameters urlQueryString]];
